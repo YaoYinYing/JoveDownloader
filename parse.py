@@ -64,8 +64,6 @@ def schedule(a,b,c):
         per = 100
     bar("下载进度:", per, 100)
 
-
-
 def downloadVideo(url, dir = "./"):
     video_fullname = "http://ecsource.jove.com/CDNSource/protected/"
     dir = dir.rstrip('/') + '/'
@@ -75,7 +73,6 @@ def downloadVideo(url, dir = "./"):
         return
     video_fullname = video_fullname + video_name
     urllib.urlretrieve(video_fullname, paper_name, schedule)
-
 
 if __name__ == '__main__':
 
